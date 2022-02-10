@@ -14,7 +14,7 @@ for_notification.show_toast(
 """------Main code begins------"""
 
 
-def automate_wallaper(path):
+def wallomator(path):
 
     try:
         # list of all the wallpapers in the folder
@@ -45,4 +45,4 @@ def automate_wallaper(path):
 
 # current path of all the wallpapers (you gotta put your path to the directory of wallpapers)
 path = r"D:\Python\Projects\scripts\wallpaper\wallpapers"
-automate_wallaper(path)
+wallomator(path)
