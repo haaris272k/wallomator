@@ -1,0 +1,1 @@
+CreateObject("Wscript.Shell").Run "D:\Python\Projects\scripts\wallpaper\execute.bat", 0, True
