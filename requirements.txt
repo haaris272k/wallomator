@@ -1,0 +1,9 @@
+This script is only supported for windows, for now.
+
+1> "python 3" or greater
+
+2> "ctypes" module
+    -> pip install ctypes
+    
+3>  "win10toast" module 
+    -> pip install win10toast
