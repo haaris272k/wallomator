@@ -20,7 +20,7 @@ def wallomator(path):
         # list of all the wallpapers in the folder
         list_wall = os.listdir(path)
 
-        # perfroming iteration so that, the wallpaper gets keep on changing in every t seconds
+        # performing iteration so that, the wallpaper gets keep on changing in every t seconds
         for i in range(len(list_wall)):
 
             # choosing a random wallpaper
