@@ -1,9 +1,10 @@
-This script is only supported for windows, for now.
+# requirements.txt
 
-1> "python 3" or greater
+# Python version 3 or greater
+python>=3
 
-2> "ctypes" module
-    -> pip install ctypes
-    
-3>  "win10toast" module 
-    -> pip install win10toast
+# ctypes module
+# No need to specify 'ctypes' as it's included in the Python standard library
+
+# win10toast module
+win10toast
