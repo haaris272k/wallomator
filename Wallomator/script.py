@@ -4,45 +4,37 @@ import ctypes
 import time
 from win10toast import ToastNotifier
 
-# notifying at the startup
-for_notification = ToastNotifier()
-for_notification.show_toast(
+# Notify user at startup
+notification = ToastNotifier()
+notification.show_toast(
     "Wallpaper Automator", "The script has been executed successfully..!", duration=10
 )
 
+# Function to change desktop wallpaper
+def change_wallpaper(path):
+    """
+    Change the desktop wallpaper with images from a specified directory.
 
-"""------Main code begins------"""
-
-
-def wallomator(path):
-
+    :param path: The directory containing wallpaper images.
+    """
     try:
-        # list of all the wallpapers in the folder
-        list_wall = os.listdir(path)
+        wallpaper_files = os.listdir(path)
 
-        # performing iteration so that, the wallpaper gets keep on changing in every t seconds
-        for i in range(len(list_wall)):
+        while True:
+            random_wallpaper = random.choice(wallpaper_files)
+            wallpaper_path = os.path.join(path, random_wallpaper)
 
-            # choosing a random wallpaper
-            random_wallpaper = random.choice(list_wall)
+            # Set the wallpaper
+            ctypes.windll.user32.SystemParametersInfoA(20, 0, wallpaper_path.encode("utf-8"), 3)
 
-            # getting the location of the randomly choosen wallpaper
-            random_wallpaper = os.path.join(path, random_wallpaper)
+            # Change wallpaper every 15 minutes (900 seconds)
+            time.sleep(900)
 
-            # image decoding
-            final_wallpaper = bytes(random_wallpaper, "utf-8")
+    except Exception as e:
+        print(f"An error occurred: {str(e)}")
 
-            # setting the wallpaper
-            ctypes.windll.user32.SystemParametersInfoA(20, 0, final_wallpaper, 3)
+# Define the path to the directory containing wallpaper images
+wallpaper_directory_path = r"D:\Python\Projects\scripts\wallpaper\wallpapers"
 
-            # specifying the time to change the wallpaper in n seconds
-            t = 900
-            time.sleep(t)
-        return "Script Executed Successfully..!"
-    except:
-        print("Some error occured..!")
-
-
-# current path of all the wallpapers (you gotta put your path to the directory of wallpapers)
-path = r"D:\Python\Projects\scripts\wallpaper\wallpapers"
-wallomator(path)
+# Start the wallpaper changer with the specified directory path
+change_wallpaper(wallpaper_directory_path)
