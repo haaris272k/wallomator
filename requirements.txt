@@ -1,2 +1,4 @@
-# win10toast module
 win10toast
+
+# optional requirement, in the case when .py file needs to be converted to executable
+auto-py-to-exe
