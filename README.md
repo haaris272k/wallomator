@@ -1,4 +1,4 @@
-# Automated Desktop Background Changer for Windows
+# Wallomator: Automated Desktop Background Changer for Windows
 
 Welcome to the Automated Desktop Background Changer ! This tool allows you to automate the process of changing your desktop background on Windows. It was created as a fun project while exploring task automation methods.
 
