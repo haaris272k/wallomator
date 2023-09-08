@@ -1,10 +1,2 @@
-# requirements.txt
-
-# Python version 3 or greater
-python>=3
-
-# ctypes module
-# No need to specify 'ctypes' as it's included in the Python standard library
-
 # win10toast module
 win10toast
