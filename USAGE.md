@@ -27,7 +27,7 @@ Automate the process of changing your desktop wallpaper using this Python script
 ### Method 4: Convert to Executable
 
 1. **Convert to Executable**:
-   - You can convert the Python script into an executable (.exe) file using tools like PyInstaller or cx_Freeze.
+   - You can convert the Python script into an executable (.exe) file using tools like PyInstaller, cx_Freeze or any other such tool.
    - Once converted, you can run the executable directly without relying on Python.
 
 **Note: Please ensure that you update the file paths within the script to match your system's configuration.**
