@@ -1,6 +1,8 @@
 # Wallomator: Automated Desktop Background Changer for Windows
 
 [![Wallomator](https://img.shields.io/badge/Wallomator-blue?style=flat-square&logo=github&logoColor=white)](https://github.com/haaris272k/wallomator/)
+[![GitHub stars](https://img.shields.io/github/stars/haaris272k/wallomator.svg?style=social&label=Stars&color=blue)](https://github.com/haaris272k/wallomator/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/haaris272k/wallomator.svg?style=social&label=Forks&color=green)](https://github.com/haaris272k/wallomator/network)
 
 Welcome to the Automated Desktop Background Changer ! This tool allows you to automate the process of changing your desktop background on Windows. It was created as a fun project while exploring task automation methods.
 
@@ -90,5 +92,7 @@ Please review our [Code of Conduct](CODE_OF_CONDUCT.md) to understand the standa
 We appreciate your contributions!
 
 ## License
+
+![MIT License](https://img.shields.io/badge/License-MIT-blue.svg)
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
